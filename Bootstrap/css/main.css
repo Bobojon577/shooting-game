@@ -1,0 +1,262 @@
+div.navbar{
+    position: relative;
+    margin-right: 2%;
+    margin-top: 0.85%;
+    
+}
+span.name_of_game{
+    font-size: 22px;
+    color: blue;
+}
+img.logo{
+    width: 42px;
+    height: 42px;
+}
+#pills-home{
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-image: url("/images/background_home.webp"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 700px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+span.span_home_1{
+    position: absolute;
+    margin-left: 37%;
+    margin-top: 8%;
+    font-size: 110px;
+    color: rgb(255, 94, 0);
+    
+}
+
+span.span_home_2{
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 15%;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    
+}
+
+span.span_home_3{
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 18%;
+    font-size: 20px;
+    color: lightcyan;
+}
+
+div.image_line{
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-image: url("/images/hdf.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+div.description{
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 10px;
+    height: 300px;
+    border-style: dotted;
+    border: 2px, blue;
+}
+
+span.about_me{
+    position: absolute;
+    margin-left: 40%;
+    font-size: 70px;
+    text-decoration: underline;
+    color: blue;
+    font-weight: 350;
+}
+span.my_description{
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 9%;
+    color: black;
+    font-weight: 550;
+    font-size: 18px
+}
+hr.line_about{
+    font-size: 5px;
+    width: 1500px;
+    margin-left: 5%;
+    margin-top: 10%;
+    color: blue;
+}
+
+footer.main_footer{
+    height: 250px;
+    background-color: #cccccc;
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 10px;
+}
+span.footer_1{
+    position: absolute;
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 2%;
+    color: blue;
+}
+span.footer_2{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 6%;
+    margin-left: 5%;
+    line-height: 35px;
+    
+}
+span.footer_3{
+    position: absolute;
+    font-size: 30px;
+    margin-left: 40%;
+    margin-top: 2%;
+    color: blue;
+}
+span.footer_4{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 43%;
+    font-weight: 500;
+    line-height: 40px;
+}
+span.footer_5{
+    position: absolute;
+    font-size: 30px;
+    margin-left: 70%;
+    margin-top: 2%;
+    color: blue;
+}
+
+span.location_logo{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 70%;
+}
+span.phone_logo{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 8%;
+    margin-left: 70%;
+}
+span.mail_logo{
+    position: absolute;
+    font-size: 20px;
+    margin-top: 11%;
+    margin-left: 70%;
+}
+
+div.description_type{
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+
+img.img_1{
+    margin-left: 5px;
+    height: 800px;
+    width: 1675px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+img.img_2{
+    margin-top: 10px;
+    height: 700px;
+    border-radius: 20px;
+    margin-left: 5px;
+    width: 550px;
+}
+img.img_3{
+    margin-top: 10px;
+    height: 700px;
+    border-radius: 20px;
+    margin-left: 5px;
+    width: 550px;
+}
+img.img_4{
+    margin-top: 10px;
+    height: 700px;
+    border-radius: 20px;
+    margin-left: 5px;
+    width: 555px;
+}
+img.img_5{
+    margin-top: 10px;
+    height: 700px;
+    width: 850px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+img.img_6{
+    margin-top: 10px;
+    height: 700px;
+    width: 815px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+div.description_type_2{
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+img.img_7{
+    margin-top: 10px;
+    height: 900px;
+    width: 1675px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+img.img_8{
+    margin-top: 10px;
+    height: 900px;
+    width: 1675px;
+    border-radius: 20px;
+    margin-left: 5px; 
+}
+img.img_9{
+    margin-top: 10px;
+    height: 900px;
+    width: 1675px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+img.img_10{
+    margin-top: 10px;
+    height: 900px;
+    width: 1675px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+img.img_11{
+    height: 500px;
+    width: 1675px;
+    border-radius: 20px;
+    margin-left: 5px;
+}

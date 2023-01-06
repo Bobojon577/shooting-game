@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css\main.css" rel="stylesheet">
+    <title>Shooter</title>
+  </head>
+  <body class="bg-info bg-gradient">
+    <nav class="border border-primary rounded-pill bg-light m-1">
+        <div class="naming position-absolute m-4">
+            <img class="logo ms-3" src="/images/logo_main.png" alt="">
+            <span class="name_of_game ms-3">AI GAME BLOG(SHOOTER)</span>
+        </div>
+        <div class="navbar d-flex flex-row-reverse">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item me-4 ms-4 " role="presentation">
+                  <button class="nav-link active rounded-pill" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item me-4 ms-4" role="presentation">
+                  <button class="nav-link rounded-pill" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">About us</button>
+                </li>
+                <li class="nav-item me-4 ms-4" role="presentation">
+                  <button class="nav-link rounded-pill" id="pills-blog-tab" data-bs-toggle="pill" data-bs-target="#pills-blog" type="button" role="tab" aria-controls="pills-blog" aria-selected="false">Blog</button>
+                </li>
+                <li class="nav-item me-4 ms-4" role="presentation">
+                    <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                  </li>
+              </ul>
+        </div>    
+    </nav>
+    <div class="main_body">
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade mt-3 a show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <span class="span_home_1">SHOOTER</span></br>
+                <span class="span_home_2">A mini game make with Unity3D, control your Knight character or Helicopter to kill Skeletons</span></br>
+                <span class="span_home_3">Game can play with mobile control.</span>
+            </div>
+            <div class="tab-pane fade mt-3" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="image_line">
+
+              </div>
+              <div class="description">
+                <span class="about_me">About me</span>
+                <span class="my_description">
+                  I am a mobile software developer in deep machine learning. 
+                  I have got a knowledge about some language like C#, 
+                  Unity and some experiance with front-end development
+                </span>
+                <hr class="line_about">
+              </div>
+
+            </div>
+            <div class="tab-pane fade mt-3" id="pills-blog" role="tabpanel" aria-labelledby="pills-blog-tab">
+              <div class="description_type">
+                <b>Action script</b>
+                This script will be an abstract class and so script is going to be an 
+                abstract class so we’re never gonna actually instantiate of action we are
+                going to use it as a base class for all our other actions and it is going 
+                to take a state controller variable called controller.<br>
+                
+                <b>State script</b>
+                Both our functions have a state controller parameter and this is because we’re 
+                continuously passing through a reference to whichever mono behavior is calling 
+                these functions of our state assets. You might wonder why we don’t just create 
+                a state controller variable for a class and use that and the reason is that they
+                are scriptable object and will need to be referred to by multiple agents and 
+                multiple shooters in the scene. If we allow variable on it, that will become a 
+                value for any other object references.
+                Added the create asset menu attribute and pass to the menu name "CreateAssetMenu 
+                (menuName = "PluggableAI/State")" than a public array of actions called actions and 
+                will set those in the inspector into actions we want to loop over. The action will be 
+                loop over by DoAction state and our "actions [i].Act (controller);" and we’re gonna 
+                pass in our controller.<br>
+
+                <b>StateController</b>
+                This script will contain public CurrentState of AI, enemyState to define the AI target, 
+                eyes of AI(picture above of AI shoots prefab), if target is dead the AI will acticate the
+                remainState. There also hiden variables such as navMeshAgent to make AI able to 
+                navigate on ground, Shooting script, list of waypoint to search for Enemy shooters 
+                and chasing target compopnent.
+              </div>
+              <div class="images_blog">
+                <img src="/images/img_1.png" alt="" class="img_1">
+                <img src="/images/img_2.png" alt="" class="img_2">
+                <img src="/images/img_3.png" alt="" class="img_3">
+                <img src="/images/img_4.png" alt="" class="img_4">
+                <img src="/images/img_5.png" alt="" class="img_5">
+                <img src="/images/img_6.png" alt="" class="img_6">
+              </div>
+              <div class="description_type_2">
+                Now in previous blog 4.0 we have a shooter that will 
+                patrol until it sees the player and then chase until 
+                the player dies. The next step is to add a second action, 
+                which is attacking, so we don't want our enemy to be able 
+                to fire a bullet every frame.
+                Our attack action is going to need a way to check a timer 
+                and since each tank is going to need to keep track of its 
+                own time to actions. We're going to locate this in our state 
+                controller which is the amount of behavior attached to our shooter.<br>
+
+                Now in previous blog 4.0 we have a shooter that will patrol until 
+                it sees the player and then chase until the player dies. 
+                The next step is to add a second action, which is attacking, 
+                so we don't want our enemy to be able to fire a bullet every frame.
+                Our attack action is going to need a way to check a timer and since
+                each shooter is going to need to keep track of its own time to actions. 
+                We're going to locate this in our state controller which is the 
+                amount of behavior attached to our shooter.
+              </div>
+              <div class="image_blog_2">
+                <img src="/images/img_7.png" alt="" class="img_7">
+                <img src="/images/img_8.png" alt="" class="img_8">
+                <img src="/images/img_9.png" alt="" class="img_9">
+                <img src="/images/img_10.png" alt="" class="img_10">
+              </div>
+
+            </div>
+            <div class="tab-pane fade mt-3" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <img src="/images/img_7.png" alt="" class="img_11">
+            </div>
+        </div>
+    </div>
+    <footer class="main_footer">
+      <span class="footer_1">AI GAMING BLOG (SHOOTER)</span>
+      <span class="footer_2">This is a game for Shooter AI.</br> Here you can find how the game was</br> developed and how everything works.</span>
+      <span class="footer_3">NAVIGATION</span>
+      <span class="footer_4">
+        HOME</br>
+        ABOUT</br>
+        BLOG</br>
+        CONTACT
+      </span>
+      <span class="footer_5">CONTACT_INFO</span>
+      <span class="location_logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" color="blue" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+        Chilonzor-16, Tashkent, Uzbekistan
+      </span>
+      <span class="phone_logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="blue" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>
+        +998975771121
+      </span>
+      <span class="mail_logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" color="blue" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+        </svg>
+        aabdukhafizov04@gmail.com
+      </span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
